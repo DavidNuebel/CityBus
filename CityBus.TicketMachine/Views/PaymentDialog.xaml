@@ -1,0 +1,88 @@
+﻿<Window x:Class="CityBus.TicketMachine.Views.PaymentDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CityBus.TicketMachine.Views"
+        mc:Ignorable="d"
+        Title="Payment" Height="180" Width="475" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+
+
+        <Label Content="Price" Grid.Column="5" Grid.Row="1" Grid.ColumnSpan="2" HorizontalContentAlignment="Center"/>
+        <Label Content="{Binding Properties.PriceFormatted}" Grid.Column="7" Grid.Row="1" Grid.ColumnSpan="2" HorizontalContentAlignment="Center"/>
+
+        <Label Content="{Binding Properties.FiftyEuro}" Grid.Column="1" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="50 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="5000" Grid.Column="1" Grid.Row="3" HorizontalContentAlignment="Center"/>
+        
+        <Label Content="{Binding Properties.TwentyEuro}" Grid.Column="2" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="20 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="2000" Grid.Column="2" Grid.Row="3" HorizontalContentAlignment="Center"/>
+        
+        <Label Content="{Binding Properties.TenEuro}" Grid.Column="3" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="10 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="1000" Grid.Column="3" Grid.Row="3" HorizontalContentAlignment="Center"/>
+        
+        <Label Content="{Binding Properties.FiveEuro}" Grid.Column="4" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="5 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="500" Grid.Column="4" Grid.Row="3" HorizontalContentAlignment="Center"/>
+        
+        <Label Content="{Binding Properties.TwoEuro}" Grid.Column="5" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="2 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="200" Grid.Column="5" Grid.Row="3" HorizontalContentAlignment="Center"/>
+        
+        <Label Content="{Binding Properties.OneEuro}" Grid.Column="6" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="1 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="100" Grid.Column="6" Grid.Row="3" HorizontalContentAlignment="Center"/>
+        
+        <Label Content="{Binding Properties.FiftyCent}" Grid.Column="7" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="0,50 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="50" Grid.Column="7" Grid.Row="3" HorizontalContentAlignment="Center"/>
+        
+        <Label Content="{Binding Properties.TwentyCent}" Grid.Column="8" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="0,20 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="20" Grid.Column="8" Grid.Row="3" HorizontalContentAlignment="Center"/>
+        
+        <Label Content="{Binding Properties.TenCent}" Grid.Column="9" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="0,10 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="10" Grid.Column="9" Grid.Row="3" HorizontalContentAlignment="Center"/>
+        
+        <Label Content="{Binding Properties.FiveCent}" Grid.Column="10" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="0,05 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="5" Grid.Column="10" Grid.Row="3" HorizontalContentAlignment="Center"/>
+        
+        <Label Content="{Binding Properties.TwoCent}" Grid.Column="11" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="0,02 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="2" Grid.Column="11" Grid.Row="3" HorizontalContentAlignment="Center"/>
+        
+        <Label Content="{Binding Properties.OneCent}" Grid.Column="12" Grid.Row="2" HorizontalContentAlignment="Center"/>
+        <Button Content="0,01 €" Command="{Binding Commands.CashCommands.Cmd}" CommandParameter="1" Grid.Column="12" Grid.Row="3" HorizontalContentAlignment="Center"/>
+
+
+        <Label Content="CashBack" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" HorizontalContentAlignment="Center"/>
+        <Label Content="{Binding Properties.CashBackFormatted}" Grid.Column="4" Grid.Row="5" Grid.ColumnSpan="2" HorizontalContentAlignment="Center"/>
+        <Button Content="Pay and Collect Cashback" Command="{Binding Commands.PayAndCollect.Cmd}" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="6" HorizontalContentAlignment="Center"/>
+                
+        <Label Content="Inserted Cash" Grid.Column="7" Grid.Row="5" Grid.ColumnSpan="3" HorizontalContentAlignment="Center"/>
+        <Label Content="{Binding Properties.CashInsertedFormatted}" Grid.Column="10" Grid.Row="5" Grid.ColumnSpan="2" HorizontalContentAlignment="Center"/>
+        <Button Content="Reset" Command="{Binding Commands.Reset.Cmd}" IsEnabled="{Binding Properties.ResetEnabled}" Grid.Column="7" Grid.Row="6" Grid.ColumnSpan="6" HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</Window>

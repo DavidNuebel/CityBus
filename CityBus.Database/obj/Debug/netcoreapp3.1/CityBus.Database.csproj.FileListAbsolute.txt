@@ -1,0 +1,8 @@
+C:\Users\DJN\source\repos\CityBus\CityBus\CityBus.Database\bin\Debug\netcoreapp3.1\CityBus.Database.deps.json
+C:\Users\DJN\source\repos\CityBus\CityBus\CityBus.Database\bin\Debug\netcoreapp3.1\CityBus.Database.dll
+C:\Users\DJN\source\repos\CityBus\CityBus\CityBus.Database\bin\Debug\netcoreapp3.1\CityBus.Database.pdb
+C:\Users\DJN\source\repos\CityBus\CityBus\CityBus.Database\obj\Debug\netcoreapp3.1\CityBus.Database.AssemblyInfoInputs.cache
+C:\Users\DJN\source\repos\CityBus\CityBus\CityBus.Database\obj\Debug\netcoreapp3.1\CityBus.Database.AssemblyInfo.cs
+C:\Users\DJN\source\repos\CityBus\CityBus\CityBus.Database\obj\Debug\netcoreapp3.1\CityBus.Database.csproj.CoreCompileInputs.cache
+C:\Users\DJN\source\repos\CityBus\CityBus\CityBus.Database\obj\Debug\netcoreapp3.1\CityBus.Database.dll
+C:\Users\DJN\source\repos\CityBus\CityBus\CityBus.Database\obj\Debug\netcoreapp3.1\CityBus.Database.pdb
